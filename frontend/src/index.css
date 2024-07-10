@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Some browsers has by default a width it says to the browser to be 0 */
+* {
+    min-width: 0;
+}
