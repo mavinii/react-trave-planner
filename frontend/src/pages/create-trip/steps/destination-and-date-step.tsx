@@ -23,7 +23,8 @@ export function DestinationAndDateStep({
                 <CalendarDays className="text-zinc-400 size-5" />
                 <input disabled={isGuestsInputOpen} type="text" placeholder="When?" className="bg-transparent text-lg placeholder-zinc-400 w-40 outline-none" />
             </div>
-
+            
+            {/* Separator */}
             <div className='w-px h-6 bg-zinc-700' />
 
             {/* Button */}
