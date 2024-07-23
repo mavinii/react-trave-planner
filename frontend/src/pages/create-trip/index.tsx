@@ -5,6 +5,7 @@ import { ConfirmTripModal } from './confirm-trip-modal';
 import { DestinationAndDateStep } from './steps/destination-and-date-step';
 import { InviteGuestsStep } from './steps/invite-guests-step';
 import { DateRange } from 'react-day-picker';
+import { api } from '../../lib/axios';
 
 export function CreateTripPage() {
 
@@ -80,7 +81,8 @@ export function CreateTripPage() {
   }
 
   // Create trip
-  function createTrip(event: FormEvent<HTMLFormElement>) {
+  // API link: https://nlw-journey.apidocumentation.com/reference
+  async function createTrip(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
     console.log({
@@ -91,7 +93,35 @@ export function CreateTripPage() {
       emailsToInvite
     })
 
-    // navigate('/trips/123')
+    if(!destination){
+      return
+    }
+
+    if(!selectedDate?.from || !selectedDate?.to){
+      return
+    }
+
+    if(emailsToInvite.length === 0){
+      return
+    }
+
+    if(!ownerName || !ownerEmail){
+      return
+    }
+
+    const response = await api.post('/trips', {
+      destination,
+      starts_at: selectedDate?.from,
+      ends_at: selectedDate?.to,
+      emails_to_invite: emailsToInvite,
+      owner_name: ownerName,
+      owner_email: ownerEmail
+    })
+
+    const { tripId } = response.data
+
+    // Redirect to the trip page passing the tripId
+    navigate(`/trips/${tripId}`)
   }
 
   return (
