@@ -1,10 +1,3 @@
-<p>
-  <h1 align="center">Travel.Plann</h1>
-</p>
-
-## 📝 About:
-This project is a travel planner where you can create a trip and invite friends to join. It was developed during the Next Level Week Together event by Rocketseat.
-
 <p align="center">
   <iframe width="600" height="338" src="https://youtu.be/ej_x8Xcd0jw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
