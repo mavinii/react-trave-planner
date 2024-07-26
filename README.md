@@ -6,9 +6,7 @@
 This project is a travel planner where you can create a trip and invite friends to join. It was developed during the Next Level Week Together event by Rocketseat.
 
 <p align="center">
-  <video alt="Travel Planner Video" src="./preview/travel_plann_preview.mp4" autoplay loop muted playsinline>
-    Your browser does not support the video tag.
-  </video>
+  <iframe width="600" height="338" src="https://youtu.be/ej_x8Xcd0jw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
 
 ### 🚀 Front-end:
