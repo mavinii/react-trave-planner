@@ -1,5 +1,14 @@
+<p>
+   <h1 align="center">Travel.Plann</h1>
+ </p>
+ 
+ ## 📝 About:
+ This project is a travel planner where you can create a trip and invite friends to join while adding links and daily activities. It was developed during the Next Level Week Together event by Rocketseat.
+
+https://github.com/user-attachments/assets/ef15804b-38c4-466a-9aa4-6256cfe0155b
+
 <p align="center">
-  <iframe width="600" height="338" src="https://youtu.be/ej_x8Xcd0jw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <img alt="BetterDay" src="./preview/frontend_preview.png" >
 </p>
 
 ### 🚀 Front-end:
@@ -7,10 +16,6 @@ It uses React, TypeScript, ViteJS and TailwindCSS. The project uses Axios to mak
 
 ### 🚀 Back-end
 The backend uses Node.js, Express, and Prisma.
-
-<p align="center">
-  <img alt="BetterDay" src="./preview/frontend_preview.png" >
-</p>
 
 ### 💻 Run this project:
 ```js
